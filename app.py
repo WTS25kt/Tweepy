@@ -1,5 +1,9 @@
 import tweepy
+from dotenv import load_dotenv
 import os
+
+# .envファイルを読み込む
+load_dotenv()
 
 # 環境変数からTwitter APIキーを取得
 consumer_key = os.environ["TWITTER_CONSUMER_KEY"]
